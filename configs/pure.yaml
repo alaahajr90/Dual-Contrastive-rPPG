@@ -1,0 +1,12 @@
+dataset: pure
+fps: 30.0
+beta: 0.5
+fft_weight: 1.0
+spectral_mode: normalized_magnitude
+skew_threshold: 1.15
+stage1_epochs: 100
+stage2_epochs: 185
+info:
+  raw_bvp_frequency_hz: 60
+  split_provenance: Manuscript PURE held-out subjects 02, 05, 09, 10
+  notes: Exact original final Stage-2 learning schedule unavailable from supplied PURE code

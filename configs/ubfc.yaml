@@ -1,0 +1,12 @@
+dataset: ubfc
+fps: 30.0
+beta: 0.5
+fft_weight: 1.5
+stat_weight: 0.5
+spectral_mode: log_magnitude
+skew_threshold: 1.15
+stage1_epochs: 100
+stage2_epochs: 185
+info:
+  split_provenance: Uploaded original revised UBFC Stage-2 clip membership
+  notes: Historical script contained skew threshold 1.25 in one call; manuscript reports 1.15

@@ -1,0 +1,14 @@
+dataset: cohface
+fps: 20.0
+beta: 1.0
+fft_weight: 2.5
+smooth_weight: 0.1
+spectral_mode: band_log_normalized
+skew_threshold: 1.0
+stage1_epochs: 100
+stage2_epochs: 185
+hr_high_hz: 4.0
+info:
+  raw_bvp_frequency_hz: 256
+  split_provenance: NOT VERIFIED: generate deterministic 24/16 split or supply archived subject IDs
+  notes: Original COHFACE source scripts were not included in provided archive

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dual-contrastive-rppg"
+version = "0.1.0"
+description = "Two-stage subject-disjoint self-supervised rPPG heart-rate research pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "numpy>=1.24", "scipy>=1.10", "opencv-python-headless>=4.8", "PyYAML>=6", "h5py>=3.9", "scikit-learn>=1.3", "matplotlib>=3.7", "tqdm>=4.66"]
+
+[project.optional-dependencies]
+preprocess = ["dlib>=19.24"]
+test = ["pytest>=7.4", "ruff>=0.5"]
+
+[project.scripts]
+rppg = "rppg.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
